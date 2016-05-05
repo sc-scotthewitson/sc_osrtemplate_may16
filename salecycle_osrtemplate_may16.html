@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OSR</title>
+
+<style>
+@charset "utf-8";
+/* CSS Document */
+
+/* Clearing up for local use only */
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html, button, input, select, textarea {
+  font-family: sans-serif;
+  color: #222;
+}
+body {
+  font-family: Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+/************************************************************************************************/
+/************************************************************************************************/
+/************************************************************************************************/
+/******* When copy/pasting to the portal, only include everything below this point **************/
+/************************************************************************************************/
+/************************************************************************************************/
+/************************************************************************************************/
+
+/* Adds border box to every box element inside our wrapper... Other than the main wrapper */
+#wrapper-sc * { box-sizing: border-box; }
+
+/* Clearfix Hack - Add class of group-sc to elements which are floated/positioned absolute, to make container respect height */
+#wrapper-sc .group-sc:before, .group-sc:after { display: table; content: ""; }
+#wrapper-sc .group-sc:after { clear: both; }
+
+/* Fix to make sure the div doesn't appear at the bottom of the page. The 1px by 1px lets it pre-load assets.  */
+div.hidden { height: 1px; width: 1px; display: none; }
+
+
+/***************** RESETTING STYLES TO AVOID CLASHING WITH CLIENT SITE - DO NOT EDIT THESE *****************/ 
+
+#wrapper-sc p { font-family: sans-serif; margin:0px; padding:0px; font-size:12px; line-height:15px; }
+#wrapper-sc a { font-family: sans-serif; margin:0px; padding:0px; font-size:12px; line-height:15px; text-decoration:none; color:#6AA8FB; }
+#wrapper-sc h1 { font-family: sans-serif; margin:0px; padding:0px; font-size:21px; line-height:25px; }
+#wrapper-sc h2 { font-family: sans-serif; margin:0px; padding:0px; font-size:19px; line-height:23px; }
+#wrapper-sc h3 { font-family: sans-serif; margin:0px; padding:0px; font-size:16px; line-height:20px; }
+#wrapper-sc h4 { font-family: sans-serif; margin:0px; padding:0px; font-size:14px; line-height:18px; }
+#wrapper-sc ul, #wrapper-sc ol { font-family: sans-serif; margin: 0 0; padding: 0 0 0 0; }
+#wrapper-sc dd { font-family: sans-serif; margin: 0 0 0 0; }
+#wrapper-sc nav ul, #wrapper-sc nav ol { font-family: sans-serif; margin: 0; padding: 0; }
+
+
+/***************** General Styling *****************/ 
+
+/* Changes highlighted colour of selected text */
+#wrapper-sc::-moz-selection { background: #000000; color: #fff; text-shadow: none; }
+#wrapper-sc::selection { background: #000000; color: #fff; text-shadow: none; }
+
+/* Makes placeholder text disappear when you select an input box */
+#wrapper-sc input:focus::-webkit-input-placeholder { color:transparent; }
+#wrapper-sc input:focus:-moz-placeholder { color:transparent; }
+#wrapper-sc input:focus::-moz-placeholder { color:transparent; } 
+#wrapper-sc input:focus:-ms-input-placeholder { color:transparent; } 
+
+
+/***************** Your V2-Generated Class Overrides Below *****************/
+
+.osr-content {
+  background-color: transparent !important;
+  top: 10% !important;
+  width:500px; /* This needs to match the wrapper-sc width */
+}
+
+.osr-overlay {
+  background-color: rgba(0,0,0,0.7) !important;
+  -webkit-animation: fade 1s ease forwards;
+  animation: fade 1s ease forwards;
+}
+
+
+/***************** Your Desktop Styles Below *****************/
+
+/* OSR Standard Fade-In Effect - Change this to whatever effect you wish */
+@-webkit-keyframes fade { from {opacity: 0;} to {opacity: 1;} }
+@keyframes fade { from {opacity: 0;} to {opacity: 1;} }
+
+
+#wrapper-sc {
+  font-family: sans-serif;
+  display: block;
+  width: 500px;
+  background: #FFFFFF;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+/**************** Your Responsive Styles Below ******************/
+
+@media screen and (max-width: 500px) {
+/* Responsive Styling below this line - change the width above depending on OSR Width */  
+  
+.osr-content {
+  width: 100%!important;
+  top: 5% !important;
+}
+
+#wrapper-sc {
+  width: 100%;
+}
+  
+}
+
+
+</style>
+
+
+</head>
+
+<body bgcolor="#000000">
+
+<!-- 
+OSR Container:                  "#wrapper-sc"
+Div containing email/submit:    "#wrapper-sc .emailContainer-sc"
+Email input box:                "#wrapper-sc .emb-sc"
+Hidden trends div:              "#trendsHide-sc"
+Trends:                         "#wrapper-sc .trendsShow-sc"
+Close Button/s:                 "#wrapper-sc .close-sc"
+Continue Button/s:              "#wrapper-sc .cta-sc"
+Send/Save Button/s:             "#wrapper-sc .send-sc"
+Email opt in checkbox:          "#wrapper-sc .optin-sc"
+On all of your buttons - href="javascript:void(0);"
+--> 
+
+<!-- When inserting in to the portal, only copy/paste #wrapper-sc, #preload and contents -->
+<div id="preload" style="display:none !important;">
+<img src="https://d22j4fzzszoii2.cloudfront.net/images/[[CLIENT-ID]]/[[TEMPLATE-ID]]/Name.ext" alt=""/>
+</div>
+
+<div id="wrapper-sc">
+
+OSR Build in here! 
+
+</div>
+
+
+
+</body>
+</html>

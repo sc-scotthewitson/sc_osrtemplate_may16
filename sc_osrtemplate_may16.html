@@ -29,9 +29,6 @@ body { font-family: Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sa
 #wrapper-sc .group-sc:before, .group-sc:after { display: table; content: ""; }
 #wrapper-sc .group-sc:after { clear: both; }
 
-/* Fix to make sure the div doesn't appear at the bottom of the page. The 1px by 1px lets it pre-load assets.  */
-div.hidden { height: 1px; width: 1px; display: none; }
-
 
 /***************** RESETTING STYLES TO AVOID CLASHING WITH CLIENT SITE - DO NOT EDIT THESE *****************/ 
 
@@ -60,6 +57,9 @@ div.hidden { height: 1px; width: 1px; display: none; }
 
 
 /***************** Your V2-Generated Class Overrides Below *****************/
+
+/* Fix to make sure the div doesn't appear at the bottom of the page. The 1px by 1px lets it pre-load assets.  */
+div.hidden { height: 1px; width: 1px; display: none; }
 
 .osr-content {
   background-color: transparent !important;
